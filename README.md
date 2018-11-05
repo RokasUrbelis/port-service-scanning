@@ -7,7 +7,9 @@ bash test.sh -f file 执行脚本
 
 bash scan.sh -h显示帮助
 
-注意file(文件可以任意指定)的格式必须是ipaddress:port形式，比如:
+注意file(文件可以任意指定)的格式必须是ipaddress:port形式，请务必保持一行一条，比如:
 127.0.0.1:80
+
 192.168.1.1:23
+
 45.32.117.7:443
