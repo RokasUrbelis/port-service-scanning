@@ -17,7 +17,9 @@ bash scan.sh -h       显示帮助
 #### 运行截图:
 
 * 运行过程输出
+
 ![](https://www.linux-code.com/wp-content/uploads/2018/05/96d99760986f95a7037f64f54b13e152.png)
 
 * result文件结果
+
 ![](https://www.linux-code.com/wp-content/uploads/2018/05/a9eed714deba71bc9a82804a2f8616be.png)
