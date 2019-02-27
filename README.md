@@ -1,25 +1,25 @@
 # port-service-scan
->写这个脚本的目的完全是为了检测网站安全性，主要用于批量扫描目标端口开放情况与探测服务版本等，速度上也做了很大程度的优化，靠后台进程来实现多线程扫描。
+- The purpose of writing this script is to detect the security of the website, mainly used for batch scanning the target port open situation and detection service version, speed has also done a great degree of optimization, rely on the background process to achieve multi-threaded scanning
 
->缺点：当目标大于300个的时候，会出现后台进程一直处于等待状态，扫描结果也会漏掉30-60个左右。所以你可以分批扫描，使用crontab定时批量切换文件扫描，如果你觉得有更好的方式去实现与改进可以随时与我联系。
+- Disadvantages: when the number of targets is greater than 300, the background process will always be in a waiting state, and the scanning results will miss about 30-60. So you can batch scan, using crontab timing batch switching file scan, if you think there is a better way to achieve and improve can contact me at any time
 
 ***Usage:***
 ```shell
-bash test.sh -f file  #执行脚本
-bash scan.sh -h       #显示帮助
+bash test.sh -f file  #exec script
+bash scan.sh -h       #print help
 ```
-#### 注意file(文件可以任意指定)的格式必须是ipaddress:port形式，请务必保持一行一条，比如:
+#### Note that the format of the file(which can be arbitrarily specified) must be in the form ipaddress:port, so be sure to keep a single line, like this:
 ```shell
 127.0.0.1:80
 192.168.1.1:23
 45.32.117.7:443
 ```
-#### 运行截图:
+#### Screen:
 
-* 运行过程输出
+* STDOUT
 
 ![](https://www.linux-code.com/wp-content/uploads/2018/05/96d99760986f95a7037f64f54b13e152.png)
 
-* result文件结果
+* result file text
 
 ![](https://www.linux-code.com/wp-content/uploads/2018/05/a9eed714deba71bc9a82804a2f8616be.png)
